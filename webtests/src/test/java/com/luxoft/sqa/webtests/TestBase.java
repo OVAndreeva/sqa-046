@@ -5,7 +5,7 @@ import org.testng.annotations.BeforeMethod;
 public class TestBase {
 
 
-    protected final Application app = new Application();
+    public Application app = new Application();
 
     @BeforeMethod
     public void setup() {
