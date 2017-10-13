@@ -1,5 +1,7 @@
 package com.luxoft.sqa.webtests;
 
+import com.luxoft.sqa.fw.ContactHelper;
+import com.luxoft.sqa.fw.SessionHelper;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 

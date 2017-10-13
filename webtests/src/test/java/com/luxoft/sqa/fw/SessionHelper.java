@@ -1,13 +1,12 @@
-package com.luxoft.sqa.webtests;
+package com.luxoft.sqa.fw;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class SessionHelper {
-    private WebDriver driver;
+public class SessionHelper extends BaseHelper{
 
     public SessionHelper(WebDriver driver) {
-        this.driver = driver;
+        super(driver);
     }
 
     public void login(String user, String pass) {
