@@ -1,6 +1,7 @@
 package com.luxoft.sqa.webtests;
 
 import com.luxoft.sqa.fw.ContactHelper;
+import com.luxoft.sqa.fw.NavigationHelper;
 import com.luxoft.sqa.fw.SessionHelper;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -16,6 +17,7 @@ public class Application {
     WebDriver driver;
     SessionHelper sessionHelper;
     ContactHelper contactHelper;
+    NavigationHelper navigationHelper;
 
     public Application(String browser) {
         this.browser = browser;
@@ -45,5 +47,9 @@ public class Application {
 
     public SessionHelper getSessionHelper() {
         return sessionHelper;
+    }
+
+    public NavigationHelper getNavigationHelper() {
+        return navigationHelper;
     }
 }
